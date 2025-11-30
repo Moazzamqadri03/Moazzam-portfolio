@@ -1,9 +1,7 @@
-// vite.config.js
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// https://vite.dev/config/
 export default defineConfig({
-  // IMPORTANT: this must match your repo name and include leading & trailing slashes
-  base: "/moazzam-portfolio/",
-  plugins: [react()]
-});
+  plugins: [react()],
+})

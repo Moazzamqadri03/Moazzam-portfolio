@@ -124,6 +124,32 @@ footer{
   font-size:14px;
 }
 
+/* Social icons — footer/nav */
+.social-icons {
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a {
+  font-size: 22px;         /* controls icon size */
+  color: inherit;          /* use parent color (set in footer/nav) */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+  opacity: 0.95;
+  line-height: 0; /* prevent vertical gaps for svg icons */
+}
+
+/* If you want icons always white in footer, set color on footer .social-icons a e.g. color:#fff */
+.social-icons a:hover {
+  transform: translateY(-4px);
+  opacity: 1;
+}
+
 /* small screens */
 @media (max-width:700px){
   #home h1{font-size:36px}
@@ -194,4 +220,10 @@ footer{
 
 .btn:hover {
   background-color: #005fcc;
+}
+
+/* small responsive tweak for social icons on mobile */
+@media (max-width:480px){
+  .social-icons { gap: 10px; }
+  .social-icons a { font-size: 20px; }
 }

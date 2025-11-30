@@ -1,3 +1,4 @@
+import {FaEnvelope } from "react-icons/fa";
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import profile from "../assets/profile.jpg";
@@ -36,26 +37,36 @@ export default function Footer() {
         <p style={{ margin: "4px 0" }}>Tech Enthusiast</p>
       </div>
 
-      {/* SOCIAL ICONS */}
-      <div style={{ textAlign: "center", marginBottom: "35px" }}>
-        <a
-          href="https://github.com/moazzamqadri03"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ margin: "12px", color: "#ccc", fontSize: "30px" }}
-        >
-          <FaGithub />
-        </a>
+     <div className="social-icons">
+  <a
+    href="https://github.com/moazzamqadri03"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+    title="GitHub"
+  >
+    <FaGithub />
+  </a>
 
-        <a
-          href="https://www.linkedin.com/in/moazzam-hussain-qadri-989144376"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ margin: "12px", color: "#0e76a8", fontSize: "30px" }}
-        >
-          <FaLinkedin />
-        </a>
-      </div>
+  <a
+    href="https://www.linkedin.com/in/moazzam-hussain-qadri-989144376/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+    title="LinkedIn"
+  >
+    <FaLinkedin />
+  </a>
+
+  {/* Email icon — opens user's mail app */}
+  <a
+    href="mailto:moazzamqadri03@gmail.com"
+    aria-label="Email"
+    title="Email"
+  >
+    <FaEnvelope />
+  </a>
+</div>
 
       {/* QUICK LINKS */}
       <div style={{ textAlign: "center", marginBottom: "35px" }}>
